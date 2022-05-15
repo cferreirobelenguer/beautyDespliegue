@@ -13,7 +13,7 @@ mongoose.connect('mongodb+srv://carol:user@mern.pilzx.mongodb.net/clientesCitas?
 
     //Crear el servidor y ponerse a escuchar peticiones HTTP
     //Hacemos cambios en el puerto de escucha para adaptarlo a heroku
-    app.listen(process.env.PORT || 3900, '0.0.0.0',()=>{
+    app.listen(process.env.PORT || 3900, '139.47.90.81/32' ,()=>{
         console.log('Servidor corriendo');
     });
 
